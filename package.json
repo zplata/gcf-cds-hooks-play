@@ -4,7 +4,7 @@
   "description": "testing stuff",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "nodemon ./index.js localhost 3000"
   },
   "repository": {
     "type": "git",
@@ -15,5 +15,12 @@
   "bugs": {
     "url": "https://github.com/zplata/gcf-cds-hooks-play/issues"
   },
-  "homepage": "https://github.com/zplata/gcf-cds-hooks-play#readme"
+  "homepage": "https://github.com/zplata/gcf-cds-hooks-play#readme",
+  "devDependencies": {
+    "nodemon": "^1.12.1"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
 }
