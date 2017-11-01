@@ -4,7 +4,9 @@
   "description": "testing stuff",
   "main": "index.js",
   "scripts": {
-    "start": "nodemon ./index.js localhost 3000"
+    "start": "node index.js",
+    "start-local": "nodemon ./index.js localhost 3000",
+    "deploy": "gcloud app deploy"
   },
   "repository": {
     "type": "git",
@@ -17,6 +19,7 @@
   },
   "homepage": "https://github.com/zplata/gcf-cds-hooks-play#readme",
   "devDependencies": {
+    "@google-cloud/nodejs-repo-tools": "^2.1.0",
     "nodemon": "^1.12.1"
   },
   "dependencies": {
